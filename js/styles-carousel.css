@@ -1,0 +1,56 @@
+.carousel  {
+   max-width: 78%; /* øèðèíà âñåãî áëîêà */
+   margin: 50px auto;
+   width:100%;
+}
+.carousel-wrapper {
+   margin: 10px 30px; /* îòñòóïû äëÿ ñòðåëîê */
+   overflow: hidden; /* ñêðûâàåì ñîäåðæèìîå, âûõîäÿùåå çà ðàìêè îñíîâíîé îáëàñòè */
+   position:relative;
+}
+.carousel-items {
+   width: 10000px; /* óñòàíàâëèâàåì áîëüøóþ øèðèíó äëÿ íàáîðà ýëåìåíòîâ */
+   position: relative; /* ïîçèöèîíèðóåì áëîê îòíîñèòåëüíî îñíîâíîé îáëàñòè êàðóñåëè */
+}
+.carousel-block {
+   float: left; /* âûñòðàèâàåì âñå ýëåìåíòû êàðóñåëè â ðÿä */
+   width: 170px; /* çàäà¸ì øèðèíó êàæäîãî ýëåìåíòà */
+    height: 90px;/* äåëàåì îñòóïû, ÷òîáû ýëåìåíòû íå ñëèâàëèñü */
+    margin: 0 14px 0 0;
+}
+.carousel-block img{
+	display:block;
+   border-radius: 5px;
+}
+
+/*********** BUTTONS ***********/
+.carousel-button-left a, .carousel-button-right a{
+   width: 25px; 
+   height: 36px; 
+   position: absolute;
+   top: -50px; 
+   cursor: pointer; 
+   text-decoration:none;
+}
+
+.carousel-button-left, .carousel-button-right{
+   position: relative;
+}
+
+.carousel-button-left a{
+   float: left; 
+   background: url(../images/carousel-left.png); 
+   right: 100px;
+}
+.carousel-button-right a{
+   float: left;
+   background: url(../images/carousel-right.png); 
+   right: 50px;
+
+}
+
+/*********** SHADOW ***********/
+/* .shadow{
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+} */
+

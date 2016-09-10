@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Customize style</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style>
+      body {
+        text-align: center;
+      }
+
+         #g2, #g3, #g4, #g5 {
+        width:150px; height:110px;
+        display: inline-block;
+        margin: 0;
+        outline: 0px solid red;
+        position: relative;
+      }
+     
+    </style>
+
+	</head>
+  <body>
+   
+  
+    <div id="g2"></div>
+     <div id="g3"></div>
+    <div id="g4"></div>
+    <div id="g5"></div>
+   
+   
+    <script src="../raphael-2.1.4.min.js"></script>
+    <!--<script src="../justgage-1.0.1.js"></script>-->
+    <script src="../justgage.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+      var g2=g3=g4=g5;
+    
+
+    
+
+     var g2 = new JustGage({
+        id: "g2",
+        value: 23,        
+        min: 0,
+        max: 100,
+        hideMinMax: true,
+        title: "MAECENAS",
+        titleFontSize: 30,
+        titlePosition: 'below',
+         customSectors: [{
+          color: '#e2534b',
+          lo: 1,
+          hi: 100
+        },],
+        counter: true,
+        gaugeWidthScale: 0.7
+      });
+
+       var g3 = new JustGage({
+        id: "g3",
+        value: 65,        
+        min: 0,
+        max: 100,
+        hideMinMax: true,
+        title: "SUSPENDISSE",
+        titleFontSize: 30,
+        titlePosition: 'below',
+         customSectors: [{
+          color: '#e2534b',
+          lo: 1,
+          hi: 100
+        },],
+        counter: true,
+        gaugeWidthScale: 0.7
+      });
+
+     var g4 = new JustGage({
+        id: "g4",
+        value: 23,        
+        min: 0,
+        max: 100,
+        hideMinMax: true,
+        title: "MAECENAS",
+        titleFontSize: 30,
+        titlePosition: 'below',
+         customSectors: [{
+          color: '#e2534b',
+          lo: 1,
+          hi: 100
+        },],
+        counter: true,
+        gaugeWidthScale: 0.7
+      });
+      
+       var g5 = new JustGage({
+        id: "g5",
+        value: 23,        
+        min: 0,
+        max: 100,
+        hideMinMax: true,
+        title: "MAECENAS",
+        titleFontSize: 30,
+        titlePosition: 'below',
+         customSectors: [{
+          color: '#e2534b',
+          lo: 1,
+          hi: 100
+        },],
+        counter: true,
+        gaugeWidthScale: 0.7
+      });
+
+    });
+    </script>
+  </body>
+</html>
